@@ -44,7 +44,8 @@ export const styles = StyleSheet.create({
 
     containerInputName: {
         flexDirection: "row", 
-        marginTop: 30
+        marginTop: 30,
+        marginBottom: 30,
         
     }
 })

@@ -1,16 +1,22 @@
 import { View, Text, TouchableOpacity } from 'react-native';
 import { style } from '@/src/app/components/participant/styles';
 
-export function Participant(){
+type Props = {
+    name: string;
+}
+
+export function Participant({name}: Props){
+    function handleTouchRemove(){
+        console.log(`Você removeu o ${name}`)
+    }
+
     return(
         <View style={style.containerParticipant}>
-            <View style={style.containerText}>
-                <Text>
-                    teste
-                </Text>
-            </View>
-
-            <TouchableOpacity style={style.button}>
+            <Text style={style.containerText}>
+                {name}
+            </Text>
+            
+            <TouchableOpacity style={style.button} onPress={handleTouchRemove}>
                 <Text>
                     -
                 </Text>
