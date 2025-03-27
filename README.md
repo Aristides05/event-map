@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+# Projeto de Aprendizado com React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este é um projeto de aprendizado que estou desenvolvendo durante o curso da Rocketseat. Surgiu a necessidade de criar um app no meu trabalho, então decidi estudar uma tecnologia que me permitisse desenvolver esse aplicativo. O projeto tem como objetivo praticar e entender as ferramentas do React Native, TypeScript e Expo.
 
-## Get started
+## 🚀 Sobre o Projeto
 
-1. Install dependencies
+O projeto é bem simples, focado no aprendizado da sintaxe do React Native e TypeScript. A ideia principal é criar um aplicativo que permita adicionar ou remover participantes de um evento. Ele não possui funcionalidades complexas como paginação ou navegação entre telas, mas serve como um excelente ponto de partida para entender o básico do framework.
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Tecnologias Utilizadas
 
-2. Start the app
+- **[Expo](https://expo.dev/)**: Plataforma utilizada para facilitar o desenvolvimento e os testes visuais diretamente no dispositivo móvel.
+  
+  ![Expo Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Expo_logo.svg/512px-Expo_logo.svg.png)
+  
+- **[TypeScript](https://www.typescriptlang.org/)**: Linguagem de programação utilizada para adicionar tipagem estática ao JavaScript e melhorar a produtividade e a segurança no código.
+  
+  ![TypeScript Logo](https://upload.wikimedia.org/wikipedia/commons/4/4b/TypeScript_Logo_2020.svg)
+  
+- **[React Native](https://reactnative.dev/)**: Framework utilizado para criar aplicativos móveis nativos utilizando JavaScript e React.
+  
+  ![React Native Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
 
-   ```bash
-    npx expo start
-   ```
+## 🏗️ Funcionalidades
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Adicionar participantes a um evento.
+- Remover participantes de um evento.
+- Interface simples e funcional com foco na interação básica com a aplicação.
