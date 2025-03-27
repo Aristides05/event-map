@@ -10,15 +10,9 @@ O projeto é bem simples, focado no aprendizado da sintaxe do React Native e Typ
 
 - **[Expo](https://expo.dev/)**: Plataforma utilizada para facilitar o desenvolvimento e os testes visuais diretamente no dispositivo móvel.
   
-  ![Expo Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Expo_logo.svg/512px-Expo_logo.svg.png)
-  
 - **[TypeScript](https://www.typescriptlang.org/)**: Linguagem de programação utilizada para adicionar tipagem estática ao JavaScript e melhorar a produtividade e a segurança no código.
   
-  ![TypeScript Logo](https://upload.wikimedia.org/wikipedia/commons/4/4b/TypeScript_Logo_2020.svg)
-  
 - **[React Native](https://reactnative.dev/)**: Framework utilizado para criar aplicativos móveis nativos utilizando JavaScript e React.
-  
-  ![React Native Logo](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
 
 ## 🏗️ Funcionalidades
 
