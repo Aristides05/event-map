@@ -1,10 +1,11 @@
-import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, FlatList } from 'react-native';
 import { Participant } from '@/src/app/components/participant';
 import { styles } from './styles';
 
 export function Home(){
 
     let name = '';
+    let nameList = ["Sophia", "Miguel", "Alice", "Arthur", "Laura", "Enzo", "Valentina", "Davi", "Isabella", "Gabriel", "Helena", "Lucas", "Luiza", "Pedro", "Beatriz"];
 
     function handleTouchAdd(){
         console.log(`Você adicionou o ${name}`)
@@ -31,9 +32,12 @@ export function Home(){
                 </TouchableOpacity>
             </View>
 
-            <Participant name='teste1'/>
-            <Participant name='test2'/>    
-            <Participant name='teste3'/>    
+            <FlatList 
+                data={nameList}
+                renderItem=
+                
+            />
+
               
         </View>
     )
