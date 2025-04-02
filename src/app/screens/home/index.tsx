@@ -1,14 +1,20 @@
-import { View, Text, TextInput, TouchableOpacity, FlatList } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, FlatList, Alert } from 'react-native';
 import { Participant } from '@/src/app/components/participant';
 import { styles } from './styles';
 
 export function Home(){
 
     let name = '';
-    let nameList = ["Sophia", "Miguel", "Alice", "Arthur", "Laura", "Enzo", "Valentina", "Davi", "Isabella", "Gabriel", "Helena", "Lucas", "Luiza", "Pedro", "Beatriz"];
+    let nameList: string[] = [];
 
     function handleTouchAdd(){
         console.log(`Você adicionou o ${name}`)
+        nameList.push(name);
+        Alert.alert(
+            "Adição de Participante",
+            `${name} adicionado a lista de presença!`
+        )
+
     }
 
     return(  
@@ -34,8 +40,14 @@ export function Home(){
 
             <FlatList 
                 data={nameList}
-                renderItem=
-                
+                renderItem={({item}) => <Participant name={item} />}
+                keyExtractor={item => item}
+                showsVerticalScrollIndicator={false}
+                ListEmptyComponent={() => (
+                    <Text>
+                        Nenhum participante adicionado
+                    </Text>
+                )}
             />
 
               

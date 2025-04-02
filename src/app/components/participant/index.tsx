@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, Alert } from 'react-native';
 import { style } from '@/src/app/components/participant/styles';
 
 type Props = {
@@ -6,8 +6,26 @@ type Props = {
 }
 
 export function Participant({name}: Props){
+
     function handleTouchRemove(){
         console.log(`Você removeu o ${name}`)
+        Alert.alert(
+            "Remoção de Participante",
+            `Você deseja remover o participante ${name}?`,
+            [
+                {
+                    text: "Sim",
+                    onPress: () => (
+                        console.log(`Você removeu o ${name}`),
+                        Alert.alert(`${name} removido da lista de presença!`)
+                    )
+                },
+                {
+                    text: "Não",
+                    style: "cancel"
+                }
+            ]
+        )
     }
 
     return(
