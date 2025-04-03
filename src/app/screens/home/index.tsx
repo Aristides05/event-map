@@ -1,20 +1,31 @@
+import {useState} from 'react';
 import { View, Text, TextInput, TouchableOpacity, FlatList, Alert } from 'react-native';
 import { Participant } from '@/src/app/components/participant';
 import { styles } from './styles';
 
 export function Home(){
-
+    const [participants, addParticipant] = useState([] as string[]);
     let name = '';
-    let nameList: string[] = [];
 
     function handleTouchAdd(){
-        console.log(`Você adicionou o ${name}`)
-        nameList.push(name);
+        if(name.trim() === ''){
+
+            Alert.alert("Nome Inválido", "Por favor insira um nome válido")
+            return;
+        }
+
+        if(participants.includes(name)){
+            Alert.alert("Participante já existe", "Já existe um participante na lista com esse nome")
+            return;
+        }
+        
+        addParticipant(prevState => [...prevState, name]);
+        // participants.push(name); //Pode ate funcionar porém não atualiza a pagina dinamicamente
+
         Alert.alert(
             "Adição de Participante",
             `${name} adicionado a lista de presença!`
         )
-
     }
 
     return(  
@@ -39,7 +50,7 @@ export function Home(){
             </View>
 
             <FlatList 
-                data={nameList}
+                data={participants}
                 renderItem={({item}) => <Participant name={item} />}
                 keyExtractor={item => item}
                 showsVerticalScrollIndicator={false}
@@ -50,7 +61,6 @@ export function Home(){
                 )}
             />
 
-              
         </View>
     )
 }
